@@ -1,0 +1,15 @@
+.editor {
+  max-width: 600px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px #000;
+  width: 100%;
+}
+
+.editor .content-editor {
+  padding: 0.5rem;
+  background-color: #c0d8d8;
+}
+
+.editor .content-editor textarea {
+  background-color: #c0d8d8;
+}

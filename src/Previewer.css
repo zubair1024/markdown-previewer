@@ -1,0 +1,15 @@
+.previewer {
+  width: 800px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.content-previewer {
+  overflow-wrap: break-word;
+  background-color: #c0d8d8;
+  padding: 1rem;
+}
+
+.content-previewer img {
+  max-width: 100%;
+}
