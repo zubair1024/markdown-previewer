@@ -14,7 +14,7 @@ export default function Previewer({ mdContent, maximized, setMaximized }) {
 
   const customPreviewerStyles = {
     display: maximized === "editor" ? "none" : undefined,
-    height: maximized === "previewer" ? "90vh" : undefined,
+    minHeight: maximized === "previewer" ? "90vh" : undefined,
     marginTop: maximized === "previewer" ? "0" : "2rem",
   };
 
@@ -34,7 +34,7 @@ export default function Previewer({ mdContent, maximized, setMaximized }) {
       </div>
       <div
         className="content-previewer"
-        style={{ height: maximized === "previewer" ? "93%" : undefined }}
+        style={{ minHeight: maximized === "previewer" ? "93%" : undefined }}
       >
         <div id="preview" dangerouslySetInnerHTML={getMarkdownText()}></div>
       </div>

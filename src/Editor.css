@@ -1,8 +1,8 @@
 .editor {
   max-width: 600px;
+  width: 100%;
   border: 1px solid black;
   box-shadow: 1px 1px 1px #000;
-  width: 100%;
 }
 
 .editor .content-editor {

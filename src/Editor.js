@@ -19,7 +19,7 @@ export default function Editor({
 
   const customEditorStyles = {
     display: maximized === "previewer" ? "none" : undefined,
-    height: maximized === "editor" ? "90vh" : undefined,
+    minHeight: maximized === "editor" ? "90vh" : undefined,
   };
 
   return (
@@ -46,9 +46,8 @@ export default function Editor({
           spellCheck="true"
           style={{
             resize: "vertical",
-            minHeight: "200px",
             width: "100%",
-            height: maximized === "editor" ? "84vh" : undefined,
+            minHeight: maximized === "editor" ? "82vh" : "200px",
           }}
         />
       </div>
